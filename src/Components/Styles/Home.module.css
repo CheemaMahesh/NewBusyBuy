@@ -4,11 +4,14 @@
     background-color: green;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+
 }
 .discountDiv{
-    height:30vh;
+    height:40vh;
     width: 100%;
-    background-image: url('../images/DiscountImgBackground.jpg');
+    background-image: url('../images/DiscountImgBackgroundT.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,15 +26,16 @@
     /* opacity: 1%; */
     display: flex;
     flex-direction: column;
-    color: rgb(230, 219, 221);
     
 }
 .dLeftT{
     height: 50%;
     width: 100%;
-    font-size: 4rem;
+    font-size: 5.5rem;
     font-weight: bold;
     opacity: 0.6;
+    color: rgb(187, 235, 11);
+
 }
 .dLeftb{
     height: 50%;
@@ -39,14 +43,129 @@
     font-size: 2.5rem;
     font-weight: bold;
     /* opacity: 0.6; */
+    color: rgb(16, 174, 218);
+
 }
 .dRight{
     height:80%;
     width: 20%;
-    background-color: rgb(94, 94, 157);
+    /* background-color: rgb(94, 94, 157); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rightT{
+    font-size: 2.2rem;
+    height:20%;
+    width: 100%; 
+       font-weight: bold;
+       padding-left: 50%;
+       color: rgb(16, 174, 218);
+    }
+.rightB{
+    font-size: 3rem;
+    height:50%;
+    width: 100%;
+    font-weight: 1000;
+    color: rgb(187, 235, 11);
+
 }
 
-@media screen and (max-width: 600px) {
 
+/* ===================================================================================================================== */
+.festivalDiv{
+    height:80vh;
+    width: 100%;
+    background-image: url('../images//Festival2.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(198, 37, 40);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.LeftW{
+    height: 100%;
+    width: 18%;
+    background-image: url('../images/Left-W.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.RightM{
+    height: 100%;
+    width: 18%;
+    background-image: url('../images/Right-M.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.saleDiv{
+    height: 100%;
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gold;
+    padding-top: 38vh;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.saleDivT{
+    height: 10%;
+    font-size: 3rem;
+    font-weight: 800;
+}
+.saleDivB{
+    height: 10%;
+    font-size: 4rem;
+    font-weight: 1000;
+    margin-top: 10vh;
+}
+
+
+
+/* =================================================Mobile-View-CSS=========================================================================== */
+@media screen and (max-width: 600px) {
+    .dLeft{
+        justify-content: center;
+        width: 50%;
+        margin-left: 5%;
+    }
+    .dLeftT{
+        font-size: 2rem;
+        padding-top: 20%;
+
+    }
+    .dLeftb{
+        font-size: 1rem;
+        padding-bottom: 20%;
+
+    }
+    .dRight{
+        height:80%;
+        width: 43%;
+      
+    }
+    .rightT{
+        margin-top: 20%;
+    }
+    
+    .rightB{
+        font-size: 1.8rem;
+    }
+    .festivalDiv{
+        background-size: cover;
+    }
+    .saleDivB{
+        margin-top: 20vh;
+    }
+    .saleDiv{
+        padding-top: 30vh;
+
+    }
     
 }
