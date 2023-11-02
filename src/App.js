@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Contact from './Components/Pages/Contact';
+import Home from './Components/Pages/Home';
+// import { useState,useEffect } from 'react';
 
 function App() {
+
+function callHandle(){
+  fetch('https://corsproxy.io/?https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=21.2513844&lng=81.62964130000002&restaurantId=194638')
+  .then(res=>res.json())
+  .then(json=>console.log(json))
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={callHandle}>Vlick mee i say</button>
+      <Home/>
+      <Contact/>
+
     </div>
   );
 }

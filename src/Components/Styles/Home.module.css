@@ -1,0 +1,52 @@
+.Home{
+    height:150vh;
+    width: 98.9vw;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+}
+.discountDiv{
+    height:30vh;
+    width: 100%;
+    background-image: url('../images/DiscountImgBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dLeft{
+    height:80%;
+    width: 60%;
+    /* background-color: blue; */
+    /* opacity: 1%; */
+    display: flex;
+    flex-direction: column;
+    color: rgb(230, 219, 221);
+    
+}
+.dLeftT{
+    height: 50%;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: bold;
+    opacity: 0.6;
+}
+.dLeftb{
+    height: 50%;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* opacity: 0.6; */
+}
+.dRight{
+    height:80%;
+    width: 20%;
+    background-color: rgb(94, 94, 157);
+}
+
+@media screen and (max-width: 600px) {
+
+    
+}
