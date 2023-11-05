@@ -1,5 +1,5 @@
 .Home{
-    height:150vh;
+    height:220vh;
     width: 98.9vw;
     background-color: green;
     display: flex;
@@ -34,7 +34,9 @@
     font-size: 5.5rem;
     font-weight: bold;
     opacity: 0.6;
-    color: rgb(187, 235, 11);
+    color: rgb(235, 224, 11);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
 
 }
 .dLeftb{
@@ -43,7 +45,7 @@
     font-size: 2.5rem;
     font-weight: bold;
     /* opacity: 0.6; */
-    color: rgb(16, 174, 218);
+    color: rgb(20, 21, 21);
 
 }
 .dRight{
@@ -61,7 +63,7 @@
     width: 100%; 
        font-weight: bold;
        padding-left: 50%;
-       color: rgb(16, 174, 218);
+       color: rgb(225, 234, 236);
     }
 .rightB{
     font-size: 3rem;
@@ -125,8 +127,36 @@
     font-weight: 1000;
     margin-top: 10vh;
 }
-
-
+/* ===================================================================Latest-styles-======================================================== */
+.latest{
+    height:100vh;
+    width: 100%;
+    /* background-color: gold; */
+    background-image: url('../images/Latest.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.latestH{
+    height:10%;
+    width: 100%;
+    font-size: 5rem;
+    color: rgb(93, 99, 73);
+    font-weight: 1000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.latestHC{
+    width: 50%;
+    margin-left: -30vw;
+    margin-top: 5vh;
+}
 
 /* =================================================Mobile-View-CSS=========================================================================== */
 @media screen and (max-width: 600px) {
@@ -152,20 +182,27 @@
     }
     .rightT{
         margin-top: 20%;
+        font-size: 1rem;
+        height: 20%;
     }
     
     .rightB{
-        font-size: 1.8rem;
+        font-size: 1.2rem;
+        height: 25%;
+
     }
     .festivalDiv{
         background-size: cover;
     }
-    .saleDivB{
-        margin-top: 20vh;
-    }
+  
     .saleDiv{
         padding-top: 30vh;
-
+    }
+    .saleDivT{
+        margin-top: -15vh;
+    }
+    .saleDivB{
+        margin-top: 20vh;
     }
     
 }

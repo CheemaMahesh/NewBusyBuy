@@ -35,6 +35,12 @@ export default function Home(){
                     <div className={styles.RightM}>
                     </div>
                 </div>
+
+                <div className={styles.latest}>
+
+                    <div className={styles.latestH}><div className={styles.latestHC}>Latest</div></div>
+
+                </div>
         </div>
     )
 }
